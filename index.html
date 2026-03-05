@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,37 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
-    
+    <title>Sorteio de amigo oculto</title>
+
+    <div id="seçãoAdicionarParticipante"></div>
+    <h2>Adicionar participantes</h2>
+    <input type="text" id="nomeNovo" placeholder="Digite o nome do novo participante">
+    <button>Adicionar</button>
+
+    <div id="seçãoListaParticipantes"></div>
+
+    <div id="cardResultadoEscondido">
+        <p>Clique para ver a resposta de </p>
+        <p id="nome"></p>
+    </div>
+
+    <div id="card" class="card" onclick="VirarCard()">
+        <div class="cardConteudo" id="cardConteudo">
+
+            <div id="cardFrente">
+                <h2>Clique para ver o amigo oculto de </h2>
+                <p id="nome"></p>
+            </div>
+
+            <div id="cardVerso">
+                <p id="nomeSorteado">nome da pessoa sorteada</p>
+            </div>
+
+        </div>
+    </div>
+
 </body>
+
 </html>
